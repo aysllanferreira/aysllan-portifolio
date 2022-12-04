@@ -14,6 +14,7 @@ function Home() {
   return (
     <div>
       <Navbar />
+      <h1>EM CONSTRUÇÃO!</h1>
       <AboutMe />
       <Expertise />
       <Experience />
