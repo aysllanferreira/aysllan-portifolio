@@ -1,9 +1,26 @@
 import React from 'react';
+import {
+  Navbar,
+  AboutMe,
+  Contact,
+  Experience,
+  Expertise,
+  Footer,
+  Projects,
+} from '../components';
 import '../styles/Pages/Home.scss';
 
 function Home() {
   return (
-    <div>Home</div>
+    <div>
+      <Navbar />
+      <AboutMe />
+      <Expertise />
+      <Experience />
+      <Projects />
+      <Contact />
+      <Footer />
+    </div>
   );
 }
 
