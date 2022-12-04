@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/components/Expertise.scss';
 
 function Expertise() {
   return (
