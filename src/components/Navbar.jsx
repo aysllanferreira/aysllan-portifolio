@@ -38,14 +38,14 @@ function Navbar() {
 
       <div id="nav">
         <ul>
-          {navLinks.map((link) => (
-            <li key={link.id}>
-              <a href={link.path}>
-                {
-                link.title
-              }
+
+          {navLinks.map(({ id, path, title }) => (
+            <li key={id}>
+              <a href={path}>
+                {title}
               </a>
             </li>
+
           ))}
         </ul>
       </div>
