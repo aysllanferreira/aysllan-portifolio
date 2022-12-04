@@ -1,9 +1,17 @@
 import React from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Home from './Pages/Home';
+import NotFound from './Pages/NotFound';
 
 function App() {
   return (
     <div className="App">
-      <h1>Portifolio</h1>
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route component={NotFound} />
+        </Switch>
+      </BrowserRouter>
     </div>
   );
 }
